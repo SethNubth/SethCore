@@ -101,6 +101,22 @@ Resultado: Gráficos al máximo sin caídas con SethCore limpiando memoria.
 
 Con SethCore + estas macros + DXVK, cualquier tostadora corre WotLK decente.
 
-¡Nos vemos en Dalaran!
+Aquí los comandos de tu SethCore V1.0 final:
+
+Todos se usan con `/sethcore` o el corto `/sc`
+
+- *`/sethcore`* o *`/sc`* - Muestra la ayuda completa con todos los comandos
+
+- *`/sethcore gc`* - Limpieza manual de memoria Lua. Te dice cuanta memoria quedó. Úsalo al entrar a Dalaran o después de un boss de ICC/SR/TOC.
+
+- *`/sethcore low`* - Fuerza el modo bajo FPS. Quita sombras y hierba al mínimo. Para Dalaran, ICC 25, Conquista del Invierno cuando hay mucha gente.
+
+- *`/sethcore high`* - Fuerza el modo alto. Restaura sombras y hierba. Úsalo cuando salgas de Dalaran o de Raid.
+
+- *`/sethcore info`* - Te muestra: Memoria actual en MB y si el Low Mode está ON/OFF.
+
+*Automáticos (no necesitas escribirlos):*
+- Cada 45 segundos hace GC solo si no estás en combate
+- Al entrar a Dalaran, ICC, SR, TOC, VoA, Ulduar, Wintergrasp activa solo el modo low automáticamente
 
 
