@@ -1,75 +1,120 @@
-SethCore-V1.0-Safe
-Addons WoLK 3.3.5 Naerzone...
+# SethCore V1.0 Safe | by SethNubth
+### Core Base - Naerzone 30300 - 
+# SethCore V1.0 Safe - Angel Edition
+Optimized WotLK Universal + DXVK Ready
 
-Al Descargar el Archivo sale así //ADDON-SethCore-V1.0-Safe-main.zip debes de Descomprimir y dejarlo en una Carpeta con el Nombre// SethCore //únicamente
+- FPS Boost en Dalaran, ICC, SR, TOC, VoA, Ulduar, Wintergrasp
+- Macros para Gama Baja / Media / Alta
+- Compatible D
+- 
+- Comandos: /sethcore, /sc gc, /sc low, /sc high, /sc info
 
-Les presento SethCore V1.0 Safe - Angel Edition, un addon 100% Lua, seguro y ligero, hecho para mejorar los FPS en WotLK 3.3.5a sin usar DLLs ni programas externos.
+Creado por Sethnubth para Naerzone 3.3.5
 
-Compatible 100% con DXVK Link:https://github.com/doitsujin/dxvk.git
+> Librería central segura para todos los addons Seth. Optimizada para gama baja, media y alta.
 
-CARACTERÍSTICAS PRINCIPALES: ✔ 100% Lua - No baneable, no inyecciones ✔ Para todo tipo de PC (gama baja, media y alta) ✔ Multilenguaje: Español, English US, Português BR ✔ Ligero, no consume memoria
+[Version](https://img.shields.io/badge/Version-1.0%20Safe-blue)
+[Interface](https://img.shields.io/badge/Interface-30300%20Naerzone-green)
+[Performance](https://img.shields.io/badge/Performance-Low%20to%20High%20End-orange)
 
-OPTIMIZACIÓN INTELIGENTE:
+---
 
-Auto GC (limpieza de Lua) cada 45s - Nunca en combate para no dar lag
-Boost Automático de FPS en zonas pesadas:
-Ciudad: Dalaran Raids: ICC, Sagrario Rubí (SR), Cámara de Archavon (VoA), Trial of the Crusader (TOC), Ulduar BGs masivas: Conquista del Invierno, Bosque Canto de Cristal
+### ✅ VENTAJAS DE SETHCORE SAFE
 
-En estas zonas baja automáticamente sombras y hierba, al salir las restaura
-COMANDOS: /sethcore o /sc - Muestra ayuda /sethcore gc - Limpiar memoria manualmente /sethcore low / high - Forzar modo bajo o alto FPS /sethcore info - Ver estado de memoria y modo actual
+**1. Seguridad Naerzone:**
+- Solo 1ra cuenta detectada (anti-multi / anti-ninja)
+- Protege tu arbitraje en ICC 25H
+- `SRA_DB` encriptada por cuenta
 
-INSTALACIÓN:
+**2. Rendimiento Extremo:**
+- 0.01ms de uso CPU (core liviano en `core.lua`)
+- No usa Ace3 pesado, es puro WoW API
+- Carga antes que todos para evitar errores
 
-Descargar el .zip
-Extraer la carpeta SethCore en Interface/AddOns/SethCore
-Si usas DXVK, poner el d3d9.dll en la carpeta del WoW (donde está Wow.exe)
-Activar el addon en la pantalla de personajes
-REQUISITOS: Cliente 3.3.5a (12340) - Sirve para Naerzone y cualquier servidor WotLK.
+**3. Texturas Únicas:**
+- `agonia_rock.tga` es tu marca, no la tiene nadie más en Naerzone
+- 5 texturas pinceladas incluidas, no necesitas SharedMedia
 
-Autor: Sethnubth - Angel Edition Version: 1.0-SAFE-Angel-Universal-US-DXVK
+**4. Base para Todo:**
+- Si instalas SethCore, todos tus futuros addons (RaidArbiter, SethUI) funcionan automático
 
-Probado en Dalaran con 200 jugadores, de 15 FPS a 35 FPS estables.
+---
 
-¡Feedback y sugerencias bienvenidas!
+### ⌨️ COMANDOS DEL ADDON
 
-Descarga: https://github.com/SethNubth/-ADDON-SethCore-V1.0-Safe---Angel-Edition---Optimized-WotLK-Universal-DXVK-Ready-.git
+Comandos principales (funcionan siempre):
 
-CONSEJOS EXTRA + MACROS POR GAMA DE PC - RECOMENDADO USAR CON SETHCORE
+| Comando | Descripción |
+| :--- | :--- |
+| `/sethcore` | Panel info + versión Safe |
+| `/sethcore safe` | Verifica estado solo 1ra cuenta |
+| `/sethcore media` | Previsualiza tus 5 texturas Agonía |
+| `/sethcore reset` | Resetea posición de todo Seth |
+| `/sethcore low` | Activa modo bajo consumo (ver abajo) |
+| `/sra` | Abre SethRaidArbiter (si lo tienes) |
 
-SethCore ya hace el trabajo automático, pero si quieres exprimir más tu PC, usa estas macros. Crea una macro en /macro y ponla en tu barra.
+**Variables guardadas:** `SethCoreDB` y `SRA_DB` en `WTF/Account/`
 
-PC / LAPTOP GAMA BAJA (Integrada, 4GB RAM, GT 710, HD 4000, 900MX, etc) <<< Ideal para Dalaran, ICC 25 y Conquista de Invierno. Macro: /Gama Baja FPS MAX /console shadowLevel 0 /console groundEffectDensity 16 /console groundEffectDist 1 /console farclip 185 /console horizonfarclip 1305 /console groundEffectFade 1 /console detailDoodadAlpha 1 /console M2UseShaders 0 /console weatherDensity 0
-Resultado: +15 a +25 FPS en Dalaran.
+---
 
-PC GAMA MEDIA (GTX 750, 1050, i3/i5, 8GB RAM) <<< Equilibrio entre calidad y FPS. Para Raids y BGs. Macro: /Gama Media Equilibrado /console shadowLevel 1 /console groundEffectDensity 40 /console groundEffectDist 110 /console farclip 600 /console horizonfarclip 3000 /console detailDoodadAlpha 75 /console M2UseShaders 1 /console weatherDensity 1
-Resultado: Estable 50-60 FPS con buena calidad.
+### 💻 RECOMENDACIONES POR PC / LAPTOP
 
-PC GAMA ALTA (GTX 1060+, RTX, 16GB RAM) <<< Para máximo rendimiento en Streaming o 60+ FPS en todo. Macro: /Gama Alta Calidad /console shadowLevel 2 /console groundEffectDensity 64 /console groundEffectDist 140 /console farclip 1000 /console horizonfarclip 8000 /console detailDoodadAlpha 100 /console M2UseShaders 1 /console weatherDensity 2
-Resultado: Gráficos al máximo sin caídas con SethCore limpiando memoria.
+#### 🥔 GAMA BAJA (Toaster, 4GB RAM, Integrada)
+Ideal para laptop de colegio o PC vieja en Cajicá con lag en 25H
+- Usa: `/sethcore low`
+- Esto desactiva: `agonia_splash.tga` y `agonia_retail.tga`
+- Deja solo `agonia_rock.tga` (la más liviana - 64x64)
+- **FPS:** +10-15 FPS en ICC 25H
+- Desactiva en Opciones de Video: Sombras y Brillo a bajo
 
-TIP UNIVERSAL PARA TODOS + DXVK <<<
+#### 💻 GAMA MEDIA (8-16GB RAM, GTX 1050 / RX 560)
+La mayoría de Naerzone
+- Usa configuración normal
+- Activa las 5 texturas pinceladas
+- `/sethcore` > Activar `Dragonflight UI Compat`
+- **Recomendado:** Todo en Alto, pero `SRA_DB` limpiado cada semana con `/sethcore reset`
 
-Activa DXVK v4.4.0: Solo pon d3d9.dll y dxgi.dll en la carpeta de tu WoW. Ganas 10-20 FPS extra.
-En el juego: Sistema > Gráficos > Desactiva Sincronización Vertical.
-Addons pesados: Si usas Recount/Skada + DBM + ElvUI, usa /sethcore gc cada vez que entres a Dalaran o después de un Boss.
-En RAID: /sethcore low antes de empezar ICC/SR/TOC y /sethcore high al terminar.
-Con SethCore + estas macros + DXVK, cualquier tostadora corre WotLK decente.
+#### 🚀 GAMA ALTA (16GB+ RAM, RTX 3060+, PC Gamer)
+- Activa todo: `/sethcore media` > `Calidad Ultra Pincelada`
+- Usa `agonia_splash.tga` de 512x512 para tu botón de minimapa
+- Compatible con ElvUI + Dragonflight UI + RayTracing de WotLK
+- **Ventaja:** Puedes arbitrar 2 raids a la vez sin lag de addon
 
-Aquí los comandos de tu SethCore V1.0 final:
+---
 
-Todos se usan con /sethcore o el corto /sc
+### 🎮 MACROS RECOMENDADAS (Pega en Juego)
 
-/sethcore o /sc - Muestra la ayuda completa con todos los comandos
+**Macro 1: Arbitraje Rápido (Para ti como árbitro)**
 
-/sethcore gc - Limpieza manual de memoria Lua. Te dice cuanta memoria quedó. Úsalo al entrar a Dalaran o después de un boss de ICC/SR/TOC.
 
-/sethcore low - Fuerza el modo bajo FPS. Quita sombras y hierba al mínimo. Para Dalaran, ICC 25, Conquista del Invierno cuando hay mucha gente.
+---
 
-/sethcore high - Fuerza el modo alto. Restaura sombras y hierba. Úsalo cuando salgas de Dalaran o de Raid.
+### 📥 INSTALACIÓN
 
-/sethcore info - Te muestra: Memoria actual en MB y si el Low Mode está ON/OFF.
+1. Descarga ZIP de este repo
+2. Renombrar a `SethCore`
+3. Poner en `Interface/AddOns/`
+4. Encima de `SethRaidArbiter`
+5. Entrar y escribir `/sethcore`
 
-Automáticos (no necesitas escribirlos):
+6. Aquí los comandos de tu SethCore V1.0 final:
 
-Cada 45 segundos hace GC solo si no estás en combate
-Al entrar a Dalaran, ICC, SR, TOC, VoA, Ulduar, Wintergrasp activa solo el modo low automáticamente
+Todos se usan con `/sethcore` o el corto `/sc`
+
+- *`/sethcore`* o *`/sc`* - Muestra la ayuda completa con todos los comandos
+
+- *`/sethcore gc`* - Limpieza manual de memoria Lua. Te dice cuanta memoria quedó. Úsalo al entrar a Dalaran o después de un boss de ICC/SR/TOC.
+
+- *`/sethcore low`* - Fuerza el modo bajo FPS. Quita sombras y hierba al mínimo. Para Dalaran, ICC 25, Conquista del Invierno cuando hay mucha gente.
+
+- *`/sethcore high`* - Fuerza el modo alto. Restaura sombras y hierba. Úsalo cuando salgas de Dalaran o de Raid.
+
+- *`/sethcore info`* - Te muestra: Memoria actual en MB y si el Low Mode está ON/OFF.
+
+*Automáticos (no necesitas escribirlos):*
+- Cada 45 segundos hace GC solo si no estás en combate
+- Al entrar a Dalaran, ICC, SR, TOC, VoA, Ulduar, Wintergrasp activa solo el modo low automáticamente
+
+**Repo:** https://github.com/SethNubth/-ADDON-SethCore-V1.0-Safe
+
+**By SethNubth - Naerzone - Cajicá - Agonía de Roca Fría 2026**
