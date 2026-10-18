@@ -4,7 +4,8 @@ Hola comunidad de Naerzone!
 
 Les presento SethCore V1.0 Safe - Angel Edition, un addon 100% Lua, seguro y ligero, hecho para mejorar los FPS en WotLK 3.3.5a sin usar DLLs ni programas externos.
 
-Compatible 100% con DXVK v4.4.0 (autorizado por MJ)
+Compatible 100% con DXVK 
+Link:https://github.com/doitsujin/dxvk.git
 
 CARACTERÍSTICAS PRINCIPALES:
 ✔ 100% Lua - No baneable, no inyecciones
