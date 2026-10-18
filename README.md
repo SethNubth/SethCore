@@ -1,120 +1,128 @@
-# SethCore V1.0 Safe | by SethNubth
-### Core Base - Naerzone 30300 - 
-# SethCore V1.0 Safe - Angel Edition
-Optimized WotLK Universal + DXVK Ready
+# SethCore V1.1 Safe Universal | by SethNubth
+### 100% Lua - DXVK Ready - Multi-idioma ES/EN/PT-BR - For All PCs
 
-- FPS Boost en Dalaran, ICC, SR, TOC, VoA, Ulduar, Wintergrasp
-- Macros para Gama Baja / Media / Alta
-- Compatible D
-- 
-- Comandos: /sethcore, /sc gc, /sc low, /sc high, /sc info
+> Core base seguro para Naerzone 3.3.5a - Optimizado para Dalaran, Raids y BGs
 
-Creado por Sethnubth para Naerzone 3.3.5
-
-> Librería central segura para todos los addons Seth. Optimizada para gama baja, media y alta.
-
-[Version](https://img.shields.io/badge/Version-1.0%20Safe-blue)
-[Interface](https://img.shields.io/badge/Interface-30300%20Naerzone-green)
-[Performance](https://img.shields.io/badge/Performance-Low%20to%20High%20End-orange)
+[Version](https://img.shields.io/badge/Version-1.1%20SAFE%20Universal-blue)
+[Lua](https://img.shields.io/badge/100%25%20Lua-Safe%20No%20DLL-green)
+[DXVK](https://img.shields.io/badge/DXVK-v4.4.0%20Vanilla%20Ready-orange)
+[Lang](https://img.shields.io/badge/Lang-ES%20EN%20PT--BR-yellow)
 
 ---
 
-### ✅ VENTAJAS DE SETHCORE SAFE
+### 📜 ¿QUÉ ES?
 
-**1. Seguridad Naerzone:**
-- Solo 1ra cuenta detectada (anti-multi / anti-ninja)
-- Protege tu arbitraje en ICC 25H
-- `SRA_DB` encriptada por cuenta
+SethCore es el motor base 100% Lua, sin DLLs ni inyecciones, 100% seguro y no baneable en Naerzone.
 
-**2. Rendimiento Extremo:**
-- 0.01ms de uso CPU (core liviano en `core.lua`)
-- No usa Ace3 pesado, es puro WoW API
-- Carga antes que todos para evitar errores
+Es compatible con **DXVK v4.4.0 Vanilla** (solo d3d9.dll - autorizado).
 
-**3. Texturas Únicas:**
-- `agonia_rock.tga` es tu marca, no la tiene nadie más en Naerzone
-- 5 texturas pinceladas incluidas, no necesitas SharedMedia
+### ✨ CARACTERÍSTICAS - Lo Establecido
 
-**4. Base para Todo:**
-- Si instalas SethCore, todos tus futuros addons (RaidArbiter, SethUI) funcionan automático
+1.  **100% Lua:** No usa `wow-optimize.dll`. No hay riesgo de ban.
+2.  **DXVK Ready:** Diseñado para funcionar con DXVK GPLAsync v3.1.1 / Sarek v1.14.0 (versión Vanilla).
+3.  **Multi-idioma:** Detecta el idioma de tu cliente WoW automáticamente:
+    *   `esES / esMX` -> Español
+    *   `enUS` -> English
+    *   `ptBR` -> Português (Brasileños)
+4.  **Universal - Para Todo Tipo de PC:** No es solo para tu PC, es para todos:
+    *   Gama Baja (Toaster / 4GB / Integrada)
+    *   Gama Media (8-16GB / GTX 1050)
+    *   Gama Alta (RTX)
 
----
+### 🚀 OPTIMIZACIÓN INTELIGENTE - Boot Automático
 
-### ⌨️ COMANDOS DEL ADDON
+El addon detecta automáticamente zonas pesadas y hace boost de FPS:
 
-Comandos principales (funcionan siempre):
+*   **Ciudad:** Dalaran
+*   **Raids:** ICC, Sagrario Rubí (SR), Prueba del Cruzado (TOC), Cámara de Archavon (VoA), Ulduar
+*   **BGs Masivas:** Conquista del Invierno, Isla de la Conquista
 
-| Comando | Descripción |
-| :--- | :--- |
-| `/sethcore` | Panel info + versión Safe |
-| `/sethcore safe` | Verifica estado solo 1ra cuenta |
-| `/sethcore media` | Previsualiza tus 5 texturas Agonía |
-| `/sethcore reset` | Resetea posición de todo Seth |
-| `/sethcore low` | Activa modo bajo consumo (ver abajo) |
-| `/sra` | Abre SethRaidArbiter (si lo tienes) |
+> En esas zonas baja sombras y hierba automáticamente. Al salir, las restaura. Auto-GC cada 45s (nunca en combate).
 
-**Variables guardadas:** `SethCoreDB` y `SRA_DB` en `WTF/Account/`
+### ⌨️ COMANDOS
 
----
-
-### 💻 RECOMENDACIONES POR PC / LAPTOP
-
-#### 🥔 GAMA BAJA (Toaster, 4GB RAM, Integrada)
-Ideal para laptop de colegio o PC vieja en Cajicá con lag en 25H
-- Usa: `/sethcore low`
-- Esto desactiva: `agonia_splash.tga` y `agonia_retail.tga`
-- Deja solo `agonia_rock.tga` (la más liviana - 64x64)
-- **FPS:** +10-15 FPS en ICC 25H
-- Desactiva en Opciones de Video: Sombras y Brillo a bajo
-
-#### 💻 GAMA MEDIA (8-16GB RAM, GTX 1050 / RX 560)
-La mayoría de Naerzone
-- Usa configuración normal
-- Activa las 5 texturas pinceladas
-- `/sethcore` > Activar `Dragonflight UI Compat`
-- **Recomendado:** Todo en Alto, pero `SRA_DB` limpiado cada semana con `/sethcore reset`
-
-#### 🚀 GAMA ALTA (16GB+ RAM, RTX 3060+, PC Gamer)
-- Activa todo: `/sethcore media` > `Calidad Ultra Pincelada`
-- Usa `agonia_splash.tga` de 512x512 para tu botón de minimapa
-- Compatible con ElvUI + Dragonflight UI + RayTracing de WotLK
-- **Ventaja:** Puedes arbitrar 2 raids a la vez sin lag de addon
-
----
-
-### 🎮 MACROS RECOMENDADAS (Pega en Juego)
-
-**Macro 1: Arbitraje Rápido (Para ti como árbitro)**
-
-
----
+| Comando | ES | EN | PT-BR |
+| :--- | :--- | :--- | :--- |
+| `/sethcore` o `/sc` | Muestra ayuda | Show help | Mostra ajuda |
+| `/sethcore low` | Forzar modo bajo FPS | Force low FPS mode | Forçar modo low FPS |
+| `/sethcore high` | Restaurar gráficos | Restore graphics | Restaurar gráficos |
+| `/sethcore gc` | Limpiar memoria Lua | Clean Lua memory | Limpar memória Lua |
 
 ### 📥 INSTALACIÓN
 
-1. Descarga ZIP de este repo
-2. Renombrar a `SethCore`
-3. Poner en `Interface/AddOns/`
-4. Encima de `SethRaidArbiter`
-5. Entrar y escribir `/sethcore`
+1.  Descarga: `Code > Download ZIP` de este repo.
+2.  Extrae y renombra a `SethCore`.
+3.  Copia a `Interface/AddOns/`.
+4.  **Opcional DXVK (Recomendado):** Ver sección abajo.
+5.  Activa en la pantalla de personajes.
 
-6. Aquí los comandos de tu SethCore V1.0 final:
+### 🔗 DXVK RECOMENDADO (Opcional, +15-30 FPS)
 
-Todos se usan con `/sethcore` o el corto `/sc`
+Para el boost real de FPS, usa SOLO la versión VANILLA (sin suprepupre).
 
-- *`/sethcore`* o *`/sc`* - Muestra la ayuda completa con todos los comandos
+> **IMPORTANTE:** Para Naerzone / Monster / Warmane usa solo la versión VANILLA. La versión FULL con wow-optimize es baneable según el propio autor suprepupre.
 
-- *`/sethcore gc`* - Limpieza manual de memoria Lua. Te dice cuanta memoria quedó. Úsalo al entrar a Dalaran o después de un boss de ICC/SR/TOC.
+**1. Para PC Gama Media/Alta (Recomendado):**
+*   Paquete: `v4.4.0-DXVK-vanilla` - DXVK GPLAsync v3.1.1
+*   Repo Oficial: `github.com/Sporif/dxvk-async/releases` o busca `doitsujin/dxvk`
+*   Busca el release de suprepupre: `v4.4.0-DXVK-vanilla` en su GitHub
+*   De todo el ZIP copia SOLO `x32/d3d9.dll` a tu carpeta de WoW.
 
-- *`/sethcore low`* - Fuerza el modo bajo FPS. Quita sombras y hierba al mínimo. Para Dalaran, ICC 25, Conquista del Invierno cuando hay mucha gente.
+**2. Para PC Gama Baja / Toaster (PC Antiguas):**
+*   Paquete: `v4.4.0-DXVK-vanilla-(sarek-for-old-pcs)` - DXVK Sarek-async v1.14.0
+*   Repo Oficial: `github.com/pythonlover02/DXVK-Sarek/releases`
+*   Busca el release de suprepupre: `v4.4.0-DXVK-vanilla-(sarek-for-old-pcs)`
+*   De todo el ZIP copia SOLO `x32/d3d9.dll`.
 
-- *`/sethcore high`* - Fuerza el modo alto. Restaura sombras y hierba. Úsalo cuando salgas de Dalaran o de Raid.
+**Instalación DXVK:** Pegar `d3d9.dll` donde está `Wow.exe`. Si hay uno viejo, reemplázalo.
+**Desinstalación:** Borra `d3d9.dll`.
 
-- *`/sethcore info`* - Te muestra: Memoria actual en MB y si el Low Mode está ON/OFF.
+### 🔗 COMPATIBILIDAD
 
-*Automáticos (no necesitas escribirlos):*
-- Cada 45 segundos hace GC solo si no estás en combate
-- Al entrar a Dalaran, ICC, SR, TOC, VoA, Ulduar, Wintergrasp activa solo el modo low automáticamente
+*   **Obligatorio para:** `SethRaidArbiter V1.1`
+*   **Cliente:** 3.3.5a (12340) - Naerzone / Warmane / Monster (Vanilla mode)
+*   **Texturas:** Agonía Roca Fría Pincelada - `Media/agonia_rock.tga`
 
-**Repo:** https://github.com/SethNubth/-ADDON-SethCore-V1.0-Safe
+**By SethNubth - Naerzone - Angel Edition - V1.1 SAFE Universal 2026**
+# SethCore V1.1 Safe Universal | by SethNubth
 
-**By SethNubth - Naerzone - Cajicá - Agonía de Roca Fría 2026**
+QUE ES? Motor base 100% Lua, sin DLLs, 100% seguro Naerzone. Compatible DXVK v4.4.0 Vanilla.
+
+CARACTERISTICAS: 100% Lua, DXVK Ready, Multi-idioma esES/enUS/ptBR, Universal Gama Baja/Media/Alta.
+
+BOOT AUTOMATICO: Dalaran, Raids ICC/SR/TOC/VoA/Ulduar, BGs Conquista del Invierno.
+
+COMANDOS: /sethcore /sc /sethcore low /sethcore high /sethcore gc
+
+ 1' Marcos F1 toaster
+ /sethcore low
+/console groundEffectDensity 16
+/console groundEffectDist 1
+/console detailDoodadDensityPct 10
+/console particleDensity 10
+/console shadowMode 0
+/console waterDetail 0
+/console weatherDensity 0
+
+2' Macro anti Crasheo
+/console maxfps 30
+/console maxfpsbk 15
+/console ffx 0
+/console ffxDeath 0
+/console ffxGlow 0
+/sethcore low
+
+3' 2. CAMBIOS EN WTF/Config.wtf (Cierra el WoW antes):**
+Abre `WTF/Config.wtf` con bloc de notas y cambia/agrega esto:
+SET shadowLevel "0"
+SET groundEffectDensity "16"
+SET groundEffectDist "1"
+SET environmentDetail "0.5"
+SET farclip "400"
+SET particleDensity "0.1"
+SET waterDetail "0"
+SET weatherDensity "0"
+SET ffxDeath "0"
+SET ffxGlow "0"
+SET Sound_EnableAllSound "0" -- solo si tu PC se congela mucho
+Esto hace que el WoW inicie ya optimizado.
