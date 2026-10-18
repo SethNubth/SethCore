@@ -36,7 +36,7 @@ COMANDOS:
 
 INSTALACIÓN:
 1. Descargar el .zip
-2. Extraer la carpeta SethCore en Interface/AddOns/
+2. Extraer la carpeta SethCore en Interface/AddOns/SethCore
 3. Si usas DXVK, poner el d3d9.dll en la carpeta del WoW (donde está Wow.exe)
 4. Activar el addon en la pantalla de personajes
 
