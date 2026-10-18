@@ -1,8 +1,8 @@
 ## Interface: 30300
-## Title: |cffffd700SethCore|r |cff00BFFF- Optimized WotLK|r |cff00ff00V1.0 Safe|r |cffffffffAngel Edition|r
-## Title-enUS: |cffffd700SethCore|r |cff00BFFF- Optimized WotLK|r |cff00ff00V1.0 Safe|r |cffffffffAngel Edition|r
-## Title-esES: |cffffd700SethCore|r |cff00BFFF- WotLK Optimizado|r |cff00ff00V1.0 Seguro|r |cffffffffEdicion Angel|r
-## Title-ptBR: |cffffd700SethCore|r |cff00BFFF- WotLK Otimizado|r |cff00ff00V1.0 Seguro|r |cffffffffEdicao Anjo|r
+## Title: |cffffd700SethCore|r |cff00BFFF- Optimized WotLK|r |cff00ff00V1.1 Safe Universal|r |cffffffffAngel Edition|r
+## Title-enUS: |cffffd700SethCore|r |cff00BFFF- Optimized WotLK|r |cff00ff00V1.1 Safe Universal|r |cffffffffAngel Edition|r
+## Title-esES: |cffffd700SethCore|r |cff00BFFF- WotLK Optimizado|r |cff00ff00V1.1 Seguro Universal|r |cffffffffEdicion Angel|r
+## Title-ptBR: |cffffd700SethCore|r |cff00BFFF- WotLK Otimizado|r |cff00ff00V1.1 Seguro Universal|r |cffffffffEdicao Anjo|r
 ## Notes: By Sethnubth - Safe Lua Engine + DXVK Ready - Auto GC + Dalaran, Raids ICC/SR/TOC/VoA/Ulduar, BGs - For All PCs
 ## Notes-enUS: By Sethnubth - Safe Lua Engine + DXVK Ready - Auto GC + Dalaran, Raids ICC/SR/TOC/VoA/Ulduar, BGs - For All PCs
 ## Notes-esES: Por Sethnubth - Motor Lua 100% Seguro + DXVK - GC Auto + Dalaran, Raids ICC/SR/TOC/VoA/Ulduar, BGs - Para todo PC
