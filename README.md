@@ -1,5 +1,48 @@
 # -ADDON-SethCore-V1.0-Safe---Angel-Edition---Optimized-WotLK-Universal-DXVK-Ready-
-Addons WoLK
+Addons WoLK 3.3.5 Naerzone...
+Hola comunidad de Naerzone!
+
+Les presento SethCore V1.0 Safe - Angel Edition, un addon 100% Lua, seguro y ligero, hecho para mejorar los FPS en WotLK 3.3.5a sin usar DLLs ni programas externos.
+
+Compatible 100% con DXVK v4.4.0 (autorizado por MJ)
+
+CARACTERÍSTICAS PRINCIPALES:
+✔ 100% Lua - No baneable, no inyecciones
+✔ Para todo tipo de PC (gama baja, media y alta)
+✔ Multilenguaje: Español, English US, Português BR
+✔ Ligero, no consume memoria
+
+OPTIMIZACIÓN INTELIGENTE:
+- Auto GC (limpieza de Lua) cada 45s - Nunca en combate para no dar lag
+- Boost Automático de FPS en zonas pesadas:
+  > Ciudad: Dalaran
+  > Raids: ICC, Sagrario Rubí (SR), Cámara de Archavon (VoA), Trial of the Crusader (TOC), Ulduar
+  > BGs masivas: Conquista del Invierno, Bosque Canto de Cristal
+- En estas zonas baja automáticamente sombras y hierba, al salir las restaura
+
+COMANDOS:
+/sethcore o /sc - Muestra ayuda
+/sethcore gc - Limpiar memoria manualmente
+/sethcore low / high - Forzar modo bajo o alto FPS
+/sethcore info - Ver estado de memoria y modo actual
+
+INSTALACIÓN:
+1. Descargar el .zip
+2. Extraer la carpeta SethCore en Interface/AddOns/
+3. Si usas DXVK, poner el d3d9.dll en la carpeta del WoW (donde está Wow.exe)
+4. Activar el addon en la pantalla de personajes
+
+REQUISITOS:
+Cliente 3.3.5a (12340) - Sirve para Naerzone y cualquier servidor WotLK.
+
+Autor: Sethnubth - Angel Edition
+Version: 1.0-SAFE-Angel-Universal-US-DXVK
+
+Probado en Dalaran con 200 jugadores, de 15 FPS a 35 FPS estables.
+
+¡Feedback y sugerencias bienvenidas!
+
+Descarga: 
 
 CONSEJOS EXTRA + MACROS POR GAMA DE PC - RECOMENDADO USAR CON SETHCORE
 
@@ -58,3 +101,5 @@ Resultado: Gráficos al máximo sin caídas con SethCore limpiando memoria.
 Con SethCore + estas macros + DXVK, cualquier tostadora corre WotLK decente.
 
 ¡Nos vemos en Dalaran!
+
+
