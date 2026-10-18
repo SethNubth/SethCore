@@ -1,6 +1,6 @@
 # SethCore-V1.0-Safe
 Addons WoLK 3.3.5 Naerzone...
- Al Descargar el Archivo adjuntarlo en una carpeta con el Nombre SethCore para Copiar en tus addons 
+ Al Descargar el Archivo adjuntarlo en una carpeta con el Nombre= <SethCore> para Copiar en tus addons 
  World of Warcraft/
   Interface/
     AddOns/
