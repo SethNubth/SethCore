@@ -1,5 +1,6 @@
 # SethCore-V1.0-Safe
 Addons WoLK 3.3.5 Naerzone...
+ 
  Al Descargar el Archivo sale así //ADDON-SethCore-V1.0-Safe-main.zip debes de Descomprimir y dejarlo en una Carpeta con el Nombre// SethCore //únicamente 
 
 Les presento SethCore V1.0 Safe - Angel Edition, un addon 100% Lua, seguro y ligero, hecho para mejorar los FPS en WotLK 3.3.5a sin usar DLLs ni programas externos.
