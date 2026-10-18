@@ -95,6 +95,7 @@ BOOT AUTOMATICO: Dalaran, Raids ICC/SR/TOC/VoA/Ulduar, BGs Conquista del Inviern
 COMANDOS: /sethcore /sc /sethcore low /sethcore high /sethcore gc
 
  1' Marcos F1 toaster
+ 
  /sethcore low
 /console groundEffectDensity 16
 /console groundEffectDist 1
@@ -105,6 +106,7 @@ COMANDOS: /sethcore /sc /sethcore low /sethcore high /sethcore gc
 /console weatherDensity 0
 
 2' Macro anti Crasheo
+
 /console maxfps 30
 /console maxfpsbk 15
 /console ffx 0
@@ -113,7 +115,9 @@ COMANDOS: /sethcore /sc /sethcore low /sethcore high /sethcore gc
 /sethcore low
 
 3' 2. CAMBIOS EN WTF/Config.wtf (Cierra el WoW antes):**
+
 Abre `WTF/Config.wtf` con bloc de notas y cambia/agrega esto:
+
 SET shadowLevel "0"
 SET groundEffectDensity "16"
 SET groundEffectDist "1"
@@ -124,5 +128,7 @@ SET waterDetail "0"
 SET weatherDensity "0"
 SET ffxDeath "0"
 SET ffxGlow "0"
-SET Sound_EnableAllSound "0" -- solo si tu PC se congela mucho
+SET Sound_EnableAllSound "0" 
+-- solo si tu PC se congela mucho
+
 Esto hace que el WoW inicie ya optimizado.
