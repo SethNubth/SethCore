@@ -1,0 +1,15 @@
+## Interface: 30300
+## Title: |cffffd700SethCore|r |cff00BFFF- Optimized WotLK|r |cff00ff00V1.0 Safe|r |cffffffffAngel Edition|r
+## Title-enUS: |cffffd700SethCore|r |cff00BFFF- Optimized WotLK|r |cff00ff00V1.0 Safe|r |cffffffffAngel Edition|r
+## Title-esES: |cffffd700SethCore|r |cff00BFFF- WotLK Optimizado|r |cff00ff00V1.0 Seguro|r |cffffffffEdicion Angel|r
+## Title-ptBR: |cffffd700SethCore|r |cff00BFFF- WotLK Otimizado|r |cff00ff00V1.0 Seguro|r |cffffffffEdicao Anjo|r
+## Notes: By Sethnubth - Safe Lua Engine + DXVK Ready - Auto GC + Dalaran & ICC Boost - For All PCs
+## Notes-enUS: By Sethnubth - Safe Lua Engine + DXVK Ready - Auto GC + Dalaran & ICC Boost - For All PCs - Universal
+## Notes-esES: Por Sethnubth - Motor Lua 100% Seguro + DXVK - GC Automatico + Boost en Dalaran e ICC - Para todo PC
+## Notes-ptBR: Por Sethnubth - Motor Lua 100% Seguro + DXVK - GC Automatico + Boost em Dalaran e ICC - Para todo PC
+## Author: Sethnubth
+## Version: 1.0-SAFE-Angel-Universal-US-DXVK
+## IconTexture: Interface\AddOns\SethCore\Icon.tga
+## SavedVariables: SethCoreDB
+
+core.lua
