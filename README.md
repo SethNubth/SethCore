@@ -1,4 +1,4 @@
-# -ADDON-SethCore-V1.0-Safe---Angel-Edition---Optimized-WotLK-Universal-DXVK-Ready-
+# SethCore-V1.0-Safe
 Addons WoLK 3.3.5 Naerzone...
 
 
