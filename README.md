@@ -117,18 +117,13 @@ COMANDOS: /sethcore /sc /sethcore low /sethcore high /sethcore gc
 3' 2. CAMBIOS EN WTF/Config.wtf (Cierra el WoW antes):**
 
 Abre `WTF/Config.wtf` con bloc de notas y cambia/agrega esto:
-
 SET shadowLevel "0"
 SET groundEffectDensity "16"
-SET groundEffectDist "1"
-SET environmentDetail "0.5"
 SET farclip "400"
 SET particleDensity "0.1"
 SET waterDetail "0"
-SET weatherDensity "0"
 SET ffxDeath "0"
 SET ffxGlow "0"
-SET Sound_EnableAllSound "0" 
--- solo si tu PC se congela mucho
+
 
 Esto hace que el WoW inicie ya optimizado.
