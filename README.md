@@ -42,7 +42,7 @@ Probado en Dalaran con 200 jugadores, de 15 FPS a 35 FPS estables.
 
 ¡Feedback y sugerencias bienvenidas!
 
-Descarga: 
+Descarga: https://github.com/SethNubth/-ADDON-SethCore-V1.0-Safe---Angel-Edition---Optimized-WotLK-Universal-DXVK-Ready-.git
 
 CONSEJOS EXTRA + MACROS POR GAMA DE PC - RECOMENDADO USAR CON SETHCORE
 
