@@ -102,6 +102,11 @@ Te da +40 FPS en ICC 25 con infestación.
 **¿Por qué solo sombras y pasto?** Porque son los 2 settings que dan 90% de la mejora. Si tocamos view distance se ve feo y la gente se queja.
 
 ---
+## Cómo mejora FPS SethCore
+- Auto-detecta Dalaran / ICC / RS / TOC / VoA
+- Desactiva sombras (shadowLevel 0) = +20 FPS
+- Reduce pasto (groundEffectDensity 16) = +5 FPS
+- Limpia memoria al cambiar de zona
+- 100% Lua, sin DLL, sin riesgo de ban
+Comandos: /sethcore low / high / gc
 
-
-**1. Macro Anti-Lag para RAIDS (úsala antes de pull):**
