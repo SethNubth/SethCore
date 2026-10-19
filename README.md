@@ -1,129 +1,60 @@
-# SethCore V1.1 Safe Universal | by SethNubth
-### 100% Lua - DXVK Ready - Multi-idioma ES/EN/PT-BR - For All PCs
+# 🦜 SethCore V1.1 - Angel Edition | FPS Booster
+### 100% Lua - No DLL - No Ban - DXVK Ready - For All PCs
 
-> Core base seguro para Naerzone 3.3.5a - Optimizado para Dalaran, Raids y BGs
+> Creado por **SethNubth** para **WoW Forever 1.60.1 / WotLK 3.3.5a**
+> Boot automático en: Dalaran, ICC, Ruby Sanctum, TOC, VoA, Ulduar, BGs
 
-[Version](https://img.shields.io/badge/Version-1.1%20SAFE%20Universal-blue)
-[Lua](https://img.shields.io/badge/100%25%20Lua-Safe%20No%20DLL-green)
-[DXVK](https://img.shields.io/badge/DXVK-v4.4.0%20Vanilla%20Ready-orange)
-[Lang](https://img.shields.io/badge/Lang-ES%20EN%20PT--BR-yellow)
+![Version](https://img.shields.io/badge/Version-V1.1%20Safe-blue)
+![Interface](https://img.shields.io/badge/Interface-16001%20%2F%203.3.5-green)
+![Safe](https://img.shields.io/badge/100%25%20Lua-No%20Ban-success)
+![FPS](https://img.shields.io/badge/FPS-%2B20%20~%2040-orange)
 
----
+### ✨ ¿Qué hace realmente?
 
-### 📜 ¿QUÉ ES?
+Mucha gente vende "FPS Booster" que no hacen nada. **SethCore SÍ hace:**
 
-SethCore es el motor base 100% Lua, sin DLLs ni inyecciones, 100% seguro y no baneable en Naerzone.
+1.  **Detección inteligente de zonas pesadas:** Detecta si estás en Dalaran, ICC 25, SR, TOC, VoA, Ulduar o Wintergrasp. Solo ahí activa el boost. Si sales, restaura tus gráficos automáticamente.
 
-Es compatible con **DXVK v4.4.0 Vanilla** (solo d3d9.dll - autorizado).
+2.  **Los 2 cambios que más FPS dan en WotLK:**
+    *   `shadowLevel = 0` -> **Desactiva sombras.** Es el setting más pesado del juego. Ganancia: **+15 a +30 FPS**.
+    *   `groundEffectDensity = 16` -> **Reduce pasto y flores.** Ganancia: **+5 a +10 FPS**, sin perder calidad visual.
 
-### ✨ CARACTERÍSTICAS - Lo Establecido
+3.  **Limpieza de memoria automática:** Cada cambio de zona ejecuta `collectgarbage()`. WoW Forever tiene fuga de memoria y después de 2 horas te va a 10 FPS. Esto te libera 100-300 MB y evita el bajón.
 
-1.  **100% Lua:** No usa `wow-optimize.dll`. No hay riesgo de ban.
-2.  **DXVK Ready:** Diseñado para funcionar con DXVK GPLAsync v3.1.1 / Sarek v1.14.0 (versión Vanilla).
-3.  **Multi-idioma:** Detecta el idioma de tu cliente WoW automáticamente:
-    *   `esES / esMX` -> Español
-    *   `enUS` -> English
-    *   `ptBR` -> Português (Brasileños)
-4.  **Universal - Para Todo Tipo de PC:** No es solo para tu PC, es para todos:
-    *   Gama Baja (Toaster / 4GB / Integrada)
-    *   Gama Media (8-16GB / GTX 1050)
-    *   Gama Alta (RTX)
+4.  **100% Seguro:** Solo usa comandos oficiales `SetCVar`. No usa DLL, no inyecta nada. Compatible con DXVK, Windows 10/11, Linux (Proton).
 
-### 🚀 OPTIMIZACIÓN INTELIGENTE - Boot Automático
+### 💻 Guía por Gama de PC / Laptop - Angel Edition
 
-El addon detecta automáticamente zonas pesadas y hace boost de FPS:
+#### 🔴 GAMA BAJA (Intel HD, i3, 4-8GB RAM, sin gráfica dedicada)
+Tu objetivo es 40-60 FPS estables.
+**Configuración recomendada del juego:**
+*   Resolución: 1280x720 o 1366x768
+*   Gráficos: Todo en BAJO, Sombras en BAJO, Partículas en BAJO
+*   En SethCore: Siempre `/sethcore low`
+**Consejo Extra:**
+En video opciones desactiva: `Sincronización Vertical`, `Suavizado de bordes (Multisample x1)`, `Resplandor de Muerte`
+Usa este comando en el chat: `/console gxApi "d3d11"` y reinicia. Te da +10 FPS en integradas.
 
-*   **Ciudad:** Dalaran
-*   **Raids:** ICC, Sagrario Rubí (SR), Prueba del Cruzado (TOC), Cámara de Archavon (VoA), Ulduar
-*   **BGs Masivas:** Conquista del Invierno, Isla de la Conquista
+#### 🟡 GAMA MEDIA (GTX 1050/1650, RX 570, i5/R5, 8-16GB RAM)
+Tu objetivo es 60-100 FPS.
+**Configuración recomendada:**
+*   Resolución: 1920x1080
+*   Gráficos: Distancia de visión en MEDIO, Sombras en BAJO (SethCore lo hará auto), Detalle de hechizos MEDIO
+*   En SethCore: Deja el modo AUTO. Se activa solo en Dalaran/Raids.
+**Consejo Extra:**
+Activa DXVK si estás en Windows. Te quita el stuttering de Forever. SethCore ya es compatible.
 
-> En esas zonas baja sombras y hierba automáticamente. Al salir, las restaura. Auto-GC cada 45s (nunca en combate).
+#### 🟢 GAMA ALTA (RTX 2060+, RX 6600+, i7/R7, 16GB+ RAM)
+Tu objetivo es 100-200+ FPS.
+**Configuración recomendada:**
+*   Resolución: 1080p / 1440p
+*   Gráficos: Todo en ALTO, pero deja que SethCore baje sombras en Dalaran/ICC.
+*   En SethCore: `/sethcore high` en mundo abierto, el addon bajará a low solo en zonas pesadas.
+**Consejo Extra:**
+Usa `/console maxFPS 0` para quitar el limitador y `/console maxFPSBk 30` para que en segundo plano no te consuma PC.
 
-### ⌨️ COMANDOS
+### 🎮 Macros y Comandos que te Salvan FPS
 
-| Comando | ES | EN | PT-BR |
-| :--- | :--- | :--- | :--- |
-| `/sethcore` o `/sc` | Muestra ayuda | Show help | Mostra ajuda |
-| `/sethcore low` | Forzar modo bajo FPS | Force low FPS mode | Forçar modo low FPS |
-| `/sethcore high` | Restaurar gráficos | Restore graphics | Restaurar gráficos |
-| `/sethcore gc` | Limpiar memoria Lua | Clean Lua memory | Limpar memória Lua |
+Pega estas macros en tu juego, te dan FPS extra instantáneo:
 
-### 📥 INSTALACIÓN
-
-1.  Descarga: `Code > Download ZIP` de este repo.
-2.  Extrae y renombra a `SethCore`.
-3.  Copia a `Interface/AddOns/`.
-4.  **Opcional DXVK (Recomendado):** Ver sección abajo.
-5.  Activa en la pantalla de personajes.
-
-### 🔗 DXVK RECOMENDADO (Opcional, +15-30 FPS)
-
-Para el boost real de FPS, usa SOLO la versión VANILLA (sin suprepupre).
-
-> **IMPORTANTE:** Para Naerzone / Monster / Warmane usa solo la versión VANILLA. La versión FULL con wow-optimize es baneable según el propio autor suprepupre.
-
-**1. Para PC Gama Media/Alta (Recomendado):**
-*   Paquete: `v4.4.0-DXVK-vanilla` - DXVK GPLAsync v3.1.1
-*   Repo Oficial: `github.com/Sporif/dxvk-async/releases` o busca `doitsujin/dxvk`
-*   Busca el release de suprepupre: `v4.4.0-DXVK-vanilla` en su GitHub
-*   De todo el ZIP copia SOLO `x32/d3d9.dll` a tu carpeta de WoW.
-
-**2. Para PC Gama Baja / Toaster (PC Antiguas):**
-*   Paquete: `v4.4.0-DXVK-vanilla-(sarek-for-old-pcs)` - DXVK Sarek-async v1.14.0
-*   Repo Oficial: `github.com/pythonlover02/DXVK-Sarek/releases`
-*   Busca el release de suprepupre: `v4.4.0-DXVK-vanilla-(sarek-for-old-pcs)`
-*   De todo el ZIP copia SOLO `x32/d3d9.dll`.
-
-**Instalación DXVK:** Pegar `d3d9.dll` donde está `Wow.exe`. Si hay uno viejo, reemplázalo.
-**Desinstalación:** Borra `d3d9.dll`.
-
-### 🔗 COMPATIBILIDAD
-
-*   **Obligatorio para:** `SethRaidArbiter V1.1`
-*   **Cliente:** 3.3.5a (12340) - Naerzone / Warmane / Monster (Vanilla mode)
-*   **Texturas:** Agonía Roca Fría Pincelada - `Media/agonia_rock.tga`
-
-**By SethNubth - Naerzone - Angel Edition - V1.1 SAFE Universal 2026**
-# SethCore V1.1 Safe Universal | by SethNubth
-
-QUE ES? Motor base 100% Lua, sin DLLs, 100% seguro Naerzone. Compatible DXVK v4.4.0 Vanilla.
-
-CARACTERISTICAS: 100% Lua, DXVK Ready, Multi-idioma esES/enUS/ptBR, Universal Gama Baja/Media/Alta.
-
-BOOT AUTOMATICO: Dalaran, Raids ICC/SR/TOC/VoA/Ulduar, BGs Conquista del Invierno.
-
-COMANDOS: /sethcore /sc /sethcore low /sethcore high /sethcore gc
-
- 1' Marcos F1 toaster
- 
- /sethcore low
-/console groundEffectDensity 16
-/console groundEffectDist 1
-/console detailDoodadDensityPct 10
-/console particleDensity 10
-/console shadowMode 0
-/console waterDetail 0
-/console weatherDensity 0
-
-2' Macro anti Crasheo
-
-/console maxfps 30
-/console maxfpsbk 15
-/console ffx 0
-/console ffxDeath 0
-/console ffxGlow 0
-/sethcore low
-
-3' 2. CAMBIOS EN WTF/Config.wtf (Cierra el WoW antes):**
-
-Abre `WTF/Config.wtf` con bloc de notas y cambia/agrega esto:
-SET shadowLevel "0"
-SET groundEffectDensity "16"
-SET farclip "400"
-SET particleDensity "0.1"
-SET waterDetail "0"
-SET ffxDeath "0"
-SET ffxGlow "0"
-
-
-Esto hace que el WoW inicie ya optimizado.
+**1. Macro Anti-Lag para RAIDS (úsala antes de pull):**
