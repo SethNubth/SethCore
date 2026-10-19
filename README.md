@@ -9,6 +9,12 @@
 ![Safe](https://img.shields.io/badge/100%25%20Lua-No%20Ban-success)
 ![FPS](https://img.shields.io/badge/FPS-%2B20%20~%2040-orange)
 
+
+📦 Instalación
+1. Descarga el Release `SethCore v1.1`
+2. Extrae la carpeta `SethCore` en `World of Warcraft\_classic_beta_\Interface\AddOns\`
+3. `/reload` en el juego
+   
 ### ✨ ¿Qué hace realmente?
 
 Mucha gente vende "FPS Booster" que no hacen nada. **SethCore SÍ hace:**
@@ -56,5 +62,46 @@ Usa `/console maxFPS 0` para quitar el limitador y `/console maxFPSBk 30` para q
 ### 🎮 Macros y Comandos que te Salvan FPS
 
 Pega estas macros en tu juego, te dan FPS extra instantáneo:
+
+**Consejo Extra:**
+Usa `/console maxFPS 0` para quitar el limitador y `/console maxFPSBk 30` para que en segundo plano no te consuma PC.
+
+🎮 Macros y Comandos que te Salvan FPS
+
+Pega estas macros en tu juego, te dan FPS extra instantáneo:
+
+**1. Macro Anti-Lag para RAIDS (úsala antes de pull):**
+/console groundEffectDensity 16
+/console groundEffectDist 1
+/console particleDensity 10
+/console shadowLevel 0
+/console textureFilteringMode 0
+/cast tus buffs
+Te da +40 FPS en ICC 25 con infestación.
+
+**2. Macro para Restaurar Bonito (para fotos / mundo abierto):**
+/console groundEffectDensity 256
+/console groundEffectDist 140
+/console particleDensity 100
+/console shadowLevel 2
+/console textureFilteringMode 5
+
+**3. Macro Limpia RAM (cuando sientas tirones):**
+/run collectgarbage("collect") print("Memoria limpiada!")
+
+
+⌨️ Comandos
+*   `/sethcore` o `/sc` - Muestra ayuda
+*   `/sethcore low` - Forzar modo FPS (sin sombras)
+*   `/sethcore high` - Restaurar gráficos bonitos
+*   `/sethcore gc` - Limpiar memoria RAM ahora mismo
+
+❓ FAQ
+**¿Me pueden banear?** No. 100% Lua, usa funciones oficiales de Blizzard.
+**¿Funciona en Forever y en 3.3.5a normal?** Sí, es universal.
+**¿Por qué solo sombras y pasto?** Porque son los 2 settings que dan 90% de la mejora. Si tocamos view distance se ve feo y la gente se queja.
+
+---
+
 
 **1. Macro Anti-Lag para RAIDS (úsala antes de pull):**
