@@ -12,7 +12,7 @@
 
 📦 Instalación
 1. Descarga el Release `SethCore v1.1`
-2. Extrae la carpeta `SethCore` en `World of Warcraft\_classic_beta_\Interface\AddOns\`
+2. Extrae la carpeta `SethCore` Copia a Interface/AddOns/ → Renombra a SethCore (Eliminar -Main) Warcraft\_classic_beta_\Interface\AddOns\`
 3. `/reload` en el juego
    
 ### ✨ ¿Qué hace realmente?
