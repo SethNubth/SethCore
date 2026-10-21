@@ -1,22 +1,8 @@
 ## Interface: 30300
-## Title: |cffffd700SethBUDDYLK|r |cff00ff00V6.2 FUSION GOD|r
-## Notes: WAR 30K + WLO 31K Anti-Rayo Halion + SethCore FPS Booster
-## Author: SethNubth - Cajica Colombia
-## Version: V2.2 FINAL GOD V6.2 FUSION
-## SavedVariables: SethBUDDYLKDB, SethCoreDB
+## Title: |cffffd700SethCore|r V1.1 Safe Universal
+## Notes: Anti-Lag Dalaran/ICC/RS/TOC/VoA - DXVK Ready - 100% Lua No Ban
+## Author: SethNubth - Angel Edition
+## Version: V1.1 Safe Universal STABLE
+## SavedVariables: SethCoreDB
 
-Libs/LibStub.lua
-CORE/Core.lua
-CORE/Detect.lua
-CORE/SethCore.lua
-CORE/Engine.lua
-CORE/GearSwap.lua
-CORE/ImportExport.lua
-CORE/UserLoader.lua
-CORE/CombatLearner.lua
-DATA/Rotation/Loader.lua
-DATA/Rotation/Official/WARRIOR_Fury_PVE.lua
-DATA/Rotation/Official/WARLOCK_Affliction_PVE.lua
-UI/Menu.lua
-UI/Minimap.lua
-UI/ErrorPopup.lua
+core.lua
