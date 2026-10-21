@@ -1,117 +1,75 @@
-# 🦜 SethCore V1.1 - Angel Edition | FPS Booster
-### 100% Lua - No DLL - No Ban - DXVK Ready - For All PCs
 
-> Creado por **SethNubth** para **WoW Forever 1.60.1 / WotLK 3.3.5a**
-> Boot automático en: Dalaran, ICC, Ruby Sanctum, TOC, VoA, Ulduar, BGs
+SethLeatCore - Made: SethNubth - Rexbe
+**V2.0 PURE LUA - Leatrix Gfx 2.15 + SethCore PURE - No DLL / Sin DLL - WotLK 3.3.5a**
 
-![Version](https://img.shields.io/badge/Version-V1.1%20Safe-blue)
-![Interface](https://img.shields.io/badge/Interface-16001%20%2F%203.3.5-green)
-![Safe](https://img.shields.io/badge/100%25%20Lua-No%20Ban-success)
-![FPS](https://img.shields.io/badge/FPS-%2B20%20~%2040-orange)
+The definitive fusion of Leatrix Gfx (2009) + SethCore PURE LUA. All in **2 files**, no libs, no Ace, no DLL.
+Fusión definitiva de Leatrix Gfx (2009) + SethCore PURE LUA. Todo en **2 archivos**, sin libs, sin Ace, sin DLL.
 
-
-📦 Instalación
-1. Descarga el Release `SethCore v1.1`
-2. Extrae la carpeta `SethCore` Copia a Interface/AddOns/ → Renombra a SethCore (Eliminar -Main) Warcraft\Interface\AddOns\`
-3. `/reload` en el juego
-   
-### ✨ ¿Qué hace realmente?
-
-Mucha gente vende "FPS Booster" que no hacen nada. **SethCore SÍ hace:**
-
-1.  **Detección inteligente de zonas pesadas:** Detecta si estás en Dalaran, ICC 25, SR, TOC, VoA, Ulduar o Wintergrasp. Solo ahí activa el boost. Si sales, restaura tus gráficos automáticamente.
-
-2.  **Los 2 cambios que más FPS dan en WotLK:**
-    *   `shadowLevel = 0` -> **Desactiva sombras.** Es el setting más pesado del juego. Ganancia: **+15 a +30 FPS**.
-    *   `groundEffectDensity = 16` -> **Reduce pasto y flores.** Ganancia: **+5 a +10 FPS**, sin perder calidad visual.
-
-3.  **Limpieza de memoria automática:** Cada cambio de zona ejecuta `collectgarbage()`. WoW Forever tiene fuga de memoria y después de 2 horas te va a 10 FPS. Esto te libera 100-300 MB y evita el bajón.
-
-4.  **100% Seguro:** Solo usa comandos oficiales `SetCVar`. No usa DLL, no inyecta nada. Compatible con DXVK, Windows 10/11, Linux (Proton).
-
-### 💻 Guía por Gama de PC / Laptop - Angel Edition
-
-#### 🔴 GAMA BAJA (Intel HD, i3, 4-8GB RAM, sin gráfica dedicada)
-Tu objetivo es 40-60 FPS estables.
-**Configuración recomendada del juego:**
-*   Resolución: 1280x720 o 1366x768
-*   Gráficos: Todo en BAJO, Sombras en BAJO, Partículas en BAJO
-*   En SethCore: Siempre `/sethcore low`
-**Consejo Extra:**
-En video opciones desactiva: `Sincronización Vertical`, `Suavizado de bordes (Multisample x1)`, `Resplandor de Muerte`
-Usa este comando en el chat: `/console gxApi "d3d11"` y reinicia. Te da +10 FPS en integradas.
-
-#### 🟡 GAMA MEDIA (GTX 1050/1650, RX 570, i5/R5, 8-16GB RAM)
-Tu objetivo es 60-100 FPS.
-**Configuración recomendada:**
-*   Resolución: 1920x1080
-*   Gráficos: Distancia de visión en MEDIO, Sombras en BAJO (SethCore lo hará auto), Detalle de hechizos MEDIO
-*   En SethCore: Deja el modo AUTO. Se activa solo en Dalaran/Raids.
-**Consejo Extra:**
-Activa DXVK si estás en Windows. Te quita el stuttering de Forever. SethCore ya es compatible.
-
-#### 🟢 GAMA ALTA (RTX 2060+, RX 6600+, i7/R7, 16GB+ RAM)
-Tu objetivo es 100-200+ FPS.
-**Configuración recomendada:**
-*   Resolución: 1080p / 1440p
-*   Gráficos: Todo en ALTO, pero deja que SethCore baje sombras en Dalaran/ICC.
-*   En SethCore: `/sethcore high` en mundo abierto, el addon bajará a low solo en zonas pesadas.
-**Consejo Extra:**
-Usa `/console maxFPS 0` para quitar el limitador y `/console maxFPSBk 30` para que en segundo plano no te consuma PC.
-
-### 🎮 Macros y Comandos que te Salvan FPS
-
-Pega estas macros en tu juego, te dan FPS extra instantáneo:
-
-**Consejo Extra:**
-Usa `/console maxFPS 0` para quitar el limitador y `/console maxFPSBk 30` para que en segundo plano no te consuma PC.
-
-🎮 Macros y Comandos que te Salvan FPS
-
-Pega estas macros en tu juego, te dan FPS extra instantáneo:
-
-**1. Macro Anti-Lag para RAIDS (úsala antes de pull):**
-/console groundEffectDensity 16
-/console groundEffectDist 1
-/console particleDensity 10
-/console shadowLevel 0
-/console textureFilteringMode 0
-/cast tus buffs
-Te da +40 FPS en ICC 25 con infestación.
-
-**2. Macro para Restaurar Bonito (para fotos / mundo abierto):**
-/console groundEffectDensity 256
-/console groundEffectDist 140
-/console particleDensity 100
-/console shadowLevel 2
-/console textureFilteringMode 5
-
-**3. Macro Limpia RAM (cuando sientas tirones):**
-/run collectgarbage("collect") print("Memoria limpiada!")
-
-
-⌨️ Comandos
-*   `/sethcore` o `/sc` - Muestra ayuda
-*   `/sethcore low` - Forzar modo FPS (sin sombras)
-*   `/sethcore high` - Restaurar gráficos bonitos
-*   `/sethcore gc` - Limpiar memoria RAM ahora mismo
-*   🧌
-*   /buggrabber 1
-   /sethcore status
-   /sethcore low
-   /sethcore high
-
-❓ FAQ
-**¿Me pueden banear?** No. 100% Lua, usa funciones oficiales de Blizzard.
-**¿Funciona en Forever y en 3.3.5a normal?** Sí, es universal.
-**¿Por qué solo sombras y pasto?** Porque son los 2 settings que dan 90% de la mejora. Si tocamos view distance se ve feo y la gente se queja.
+Compatible: SethCore / AzerothCore / TrinityCore / WotLK 3.3.5a
 
 ---
-## Cómo mejora FPS SethCore
-- Auto-detecta Dalaran / ICC / RS / TOC / VoA
-- Desactiva sombras (shadowLevel 0) = +20 FPS
-- Reduce pasto (groundEffectDensity 16) = +5 FPS
-- Limpia memoria al cambiar de zona
-- 100% Lua, sin DLL, sin riesgo de ban
-Comandos: /sethcore low / high / gc
+🇺🇸 ENGLISH
 
+✨ Features
+**Leatrix Gfx:** Reduce world colors (16-bit), Remove shadows/dirt, Disable shaders/ground/glow, FPS Limiter, Fullscreen mode.
+**SethCore PURE GC:** Smart Garbage Collector (no lag), 50 KB idle / 15 KB combat / 300 KB loading, Recycled table pool, Live memory counter.
+**Fixes:** Fix `fpscap` line 151 (original bug), Fix 2 separated OnUpdate frames, 4 Locales: EN / ES / RU / PT-BR.
+
+📦 Installation
+1. Download ZIP from GitHub (Code > Download ZIP)
+2. **IMPORTANT:** If folder is named `SethLeatCore-main`, **rename it to `SethLeatCore`** (remove `-main`)
+3. Delete old versions: `Interface/AddOns/Leatrix_Gfx` and `Interface/AddOns/SethCore`
+4. Copy `SethLeatCore` to: `World of Warcraft/Interface/AddOns/`
+5. Final path must be:
+Interface/AddOns/SethLeatCore/SethLeatCore.toc
+   Interface/AddOns/SethLeatCore/SethLeatCore.lua
+6. Start WoW.
+
+⌨️ Commands
+Main: **/slg**
+- `/slg` - Open config panel
+- `/slg rl` / `/slg reload` - Apply changes (ReloadUI)
+- `/slg s` / `/slg status` - Show memory & Step
+- `/slg c` / `/slg collect` - Force GC
+- `/slg on` / `off` - Enable/Disable GC
+- Aliases: `/gfx`, `/sc`, `/sethcore` still work.
+
+---
+🇪🇸 ESPAÑOL
+
+✨ Características
+**Leatrix Gfx:** Reducir colores (16 bits), Quitar sombras/suciedad, Desactivar shaders/pasto/brillo, Limitador FPS, Pantalla completa.
+**SethCore PURE GC:** GC Inteligente (sin lag), 50 KB idle / 15 KB combate / 300 KB loading, Pool de tablas recicladas, Contador de memoria en vivo.
+**Fixes:** Fix `fpscap` línea 151 (bug original), Fix 2 Frames separados, 4 Idiomas: EN / ES / RU / PT-BR.
+
+📦 Instalación
+1. Descarga el ZIP (Code > Download ZIP)
+2. **IMPORTANTE:** Si la carpeta se llama `SethLeatCore-main`, **renómbrala a `SethLeatCore`** (quita el `-main`)
+3. Borra versiones viejas: `Interface/AddOns/Leatrix_Gfx` y `Interface/AddOns/SethCore`
+4. Copia `SethLeatCore` a: `World of Warcraft/Interface/AddOns/`
+5. Ruta final debe quedar:
+Interface/AddOns/SethLeatCore/SethLeatCore.toc
+   Interface/AddOns/SethLeatCore/SethLeatCore.lua
+6. Inicia WoW.
+
+⌨️ Comandos
+Principal: **/slg**
+- `/slg` - Abre panel
+- `/slg rl` / `reload` - Aplica cambios (ReloadUI)
+- `/slg s` / `status` - Ver memoria y Step
+- `/slg c` / `collect` - Forzar limpieza GC
+- `/slg on` / `off` - Activar/Desactivar GC
+- Alias: `/gfx`, `/sc`, `/sethcore` siguen funcionando.
+
+---
+📁 Files / Archivos
+Only 2 files / Solo 2 archivos:
+- `SethLeatCore.toc`
+- `SethLeatCore.lua`
+
+👑 Credits / Créditos
+- Original Leatrix Gfx: Leatrix (2009)
+- Fix & Fusion PURE LUA: SethNubth - Rexbe
+- Made: SethNubth - Rexbe
+
+> PURE LUA - NO DLL - NO ACE - WOTLK READY / SIN DLL - SIN ACE - WOTLK LISTO
