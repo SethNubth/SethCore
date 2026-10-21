@@ -1,91 +1,53 @@
--- SethCore V1.1 Safe Universal - by SethNubth - Angel Edition - STABLE
--- 100% Lua - No DLL - No Ban - DXVK Ready - For All PCs
--- Boot automatico en: Dalaran, ICC, RS, TOC, VoA, Ulduar, BGs
+-- SethCore V1.0 SAFE MODE - by SethNubth - NO BLOQUEA NADA
+local f=CreateFrame("Frame", "SethCoreSafeFrame")
+local loaded=false
 
-local ADDON="SethCore"
-local LOCALE=GetLocale()
-local L={}
-if LOCALE=="ptBR" or LOCALE=="ptPT" then
-  L.LOADED="SethCore V1.1 carregado! /sethcore low/high/gc - DXVK Ready"
-  L.LOW_ON="Boost ON em: %s - FPS aumentado"
-  L.HIGH_ON="Graficos restaurados"
-  L.GC="GC: %d MB"
-else
-  if LOCALE=="esES" or LOCALE=="esMX" then
-    L.LOADED="SethCore V1.1 cargado! /sethcore low/high/gc - DXVK Ready"
-    L.LOW_ON="Boost ON en: %s - FPS aumentado"
-    L.HIGH_ON="Graficos restaurados"
-    L.GC="GC: %d MB"
-  else
-    L.LOADED="SethCore V1.1 loaded! /sethcore low/high/gc - DXVK Ready"
-    L.LOW_ON="Boost ON in: %s - FPS boosted"
-    L.HIGH_ON="Graphics restored"
-    L.GC="GC: %d MB"
+local function Print(m)
+  if DEFAULT_CHAT_FRAME then
+    DEFAULT_CHAT_FRAME:AddMessage("|cffffd700[SethCore]|r "..m)
   end
 end
-
-local heavyZones={
-  ["Dalaran"]=true, ["Ciudad de Dalaran"]=true,
-  ["Icecrown Citadel"]=true, ["Ciudadela de la Corona de Hielo"]=true, ["Cidadela da Coroa de Gelo"]=true,
-  ["The Ruby Sanctum"]=true, ["El Sagrario Rubi"]=true, ["Santuario Rubi"]=true,
-  ["Trial of the Crusader"]=true, ["Prueba del Cruzado"]=true,
-  ["Vault of Archavon"]=true, ["Camara de Archavon"]=true,
-  ["Ulduar"]=true, ["Wintergrasp"]=true, ["Conquista del Invierno"]=true,
-}
-
-local f=CreateFrame("Frame")
-local saved={}
-
-local function Print(m) DEFAULT_CHAT_FRAME:AddMessage("|cffffd700[SethCore]|r "..m) end
-
-local function EnableLow(zone)
-  if saved.applied then return end
-  saved.shadow=GetCVar("shadowLevel")
-  saved.density=GetCVar("groundEffectDensity")
-  saved.farclip=GetCVar("farclip")
-  SetCVar("shadowLevel","0")
-  SetCVar("groundEffectDensity","16")
-  SetCVar("farclip","400")
-  saved.applied=true
-  Print(string.format(L.LOW_ON, zone))
-end
-
-local function DisableLow()
-  if not saved.applied then return end
-  if saved.shadow then SetCVar("shadowLevel",saved.shadow) end
-  if saved.density then SetCVar("groundEffectDensity",saved.density) end
-  if saved.farclip then SetCVar("farclip",saved.farclip) end
-  saved.applied=false
-  Print(L.HIGH_ON)
-end
-
-SethCoreAPI={
-  EnableLow=EnableLow,
-  DisableLow=DisableLow,
-  IsActive=function() return saved.applied end,
-}
 
 f:RegisterEvent("ADDON_LOADED")
-f:RegisterEvent("PLAYER_ENTERING_WORLD")
-f:RegisterEvent("ZONE_CHANGED_NEW_AREA")
-
-f:SetScript("OnEvent", function(_,e,a)
-  if e=="ADDON_LOADED" and a==ADDON then
-    Print(L.LOADED)
-  elseif e=="PLAYER_ENTERING_WORLD" or e=="ZONE_CHANGED_NEW_AREA" then
-    local z=GetRealZoneText() or ""
-    if heavyZones[z] then EnableLow(z) else DisableLow() end
-    collectgarbage("collect")
+f:SetScript("OnEvent", function(self, event, arg1)
+  if event=="ADDON_LOADED" and arg1=="SethCore" and not loaded then
+    loaded=true
+    Print("V1.0 SAFE cargado - NO bloquea - /sethcore low / high / status")
+    self:UnregisterEvent("ADDON_LOADED")
   end
 end)
+
+-- Funciones con pcall para que nunca crasheen
+local function SafeSetCVar(cvar, value)
+  local ok, err = pcall(function() SetCVar(cvar, value) end)
+  if not ok then
+    Print("CVar "..cvar.." error: "..tostring(err))
+  end
+  return ok
+end
+
+local saved={}
+local function Enable()
+  saved.s1=GetCVar("shadowLevel")
+  saved.s2=GetCVar("groundEffectDensity")
+  Print("Guardado: shadow="..tostring(saved.s1))
+  SafeSetCVar("shadowLevel", "0")
+  SafeSetCVar("groundEffectDensity", "24")
+  Print("Boost ON - Manual")
+end
+
+local function Disable()
+  if saved.s1 then SafeSetCVar("shadowLevel", saved.s1) end
+  if saved.s2 then SafeSetCVar("groundEffectDensity", saved.s2) end
+  Print("Boost OFF - Restaurado")
+end
 
 SLASH_SETHCORE1="/sethcore"
 SLASH_SETHCORE2="/sc"
 SlashCmdList["SETHCORE"]=function(msg)
-  msg=string.lower(msg or "")
-  if msg=="low" then EnableLow("Manual")
-  elseif msg=="high" then DisableLow()
-  elseif msg=="gc" then collectgarbage("collect") Print(string.format(L.GC, math.floor(gcinfo()/1024)))
-  else Print("Comandos: /sethcore low / high / gc - V1.1 STABLE - ICC/RS/TOC/VoA/Ulduar/Dalaran/BGs")
-  end
+  msg=msg and string.lower(msg) or ""
+  if msg=="low" or msg=="on" then Enable()
+  elseif msg=="high" or msg=="off" then Disable()
+  elseif msg=="status" then Print("SAFE MODE - No bloquea, solo manual")
+  else Print("Uso: /sethcore low = ON | /sethcore high = OFF | /sethcore status") end
 end
