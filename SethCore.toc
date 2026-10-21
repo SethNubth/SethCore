@@ -1,8 +1,8 @@
 ## Interface: 30300
-## Title: |cffffd700SethCore|r V1.1 Safe Universal
-## Notes: Anti-Lag Dalaran/ICC/RS/TOC/VoA - DXVK Ready - 100% Lua No Ban
-## Author: SethNubth - Angel Edition
-## Version: V1.1 Safe Universal STABLE
+## Title: SethCore
+## Notes: V1.0 SAFE - No bloquea
+## Author: SethNubth
+## Version: V1.0 SAFE
 ## SavedVariables: SethCoreDB
 
 core.lua
