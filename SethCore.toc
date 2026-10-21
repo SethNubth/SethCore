@@ -1,15 +1,22 @@
 ## Interface: 30300
-## Title: |cffffd700SethCore|r |cff00BFFF- Optimized WotLK|r |cff00ff00V1.1 Safe Universal|r |cffffffffAngel Edition|r
-## Title-enUS: |cffffd700SethCore|r |cff00BFFF- Optimized WotLK|r |cff00ff00V1.1 Safe Universal|r |cffffffffAngel Edition|r
-## Title-esES: |cffffd700SethCore|r |cff00BFFF- WotLK Optimizado|r |cff00ff00V1.1 Seguro Universal|r |cffffffffEdicion Angel|r
-## Title-ptBR: |cffffd700SethCore|r |cff00BFFF- WotLK Otimizado|r |cff00ff00V1.1 Seguro Universal|r |cffffffffEdicao Anjo|r
-## Notes: By Sethnubth - Safe Lua Engine + DXVK Ready - Auto GC + Dalaran, Raids ICC/SR/TOC/VoA/Ulduar, BGs - For All PCs
-## Notes-enUS: By Sethnubth - Safe Lua Engine + DXVK Ready - Auto GC + Dalaran, Raids ICC/SR/TOC/VoA/Ulduar, BGs - For All PCs
-## Notes-esES: Por Sethnubth - Motor Lua 100% Seguro + DXVK - GC Auto + Dalaran, Raids ICC/SR/TOC/VoA/Ulduar, BGs - Para todo PC
-## Notes-ptBR: Por Sethnubth - Motor Lua 100% Seguro + DXVK - GC Auto + Dalaran, Raids ICC/SR/TOC/VoA/Ulduar, BGs - Para todo PC
-## Author: Sethnubth
-## Version: 1.1-SAFE-Universal-DXVK-Multilang
-## IconTexture: Interface\AddOns\SethCore\Media\agonia_rock.tga
-## SavedVariables: SethCoreDB
+## Title: |cffffd700SethBUDDYLK|r |cff00ff00V6.2 FUSION GOD|r
+## Notes: WAR 30K + WLO 31K Anti-Rayo Halion + SethCore FPS Booster
+## Author: SethNubth - Cajica Colombia
+## Version: V2.2 FINAL GOD V6.2 FUSION
+## SavedVariables: SethBUDDYLKDB, SethCoreDB
 
-core.lua
+Libs/LibStub.lua
+CORE/Core.lua
+CORE/Detect.lua
+CORE/SethCore.lua
+CORE/Engine.lua
+CORE/GearSwap.lua
+CORE/ImportExport.lua
+CORE/UserLoader.lua
+CORE/CombatLearner.lua
+DATA/Rotation/Loader.lua
+DATA/Rotation/Official/WARRIOR_Fury_PVE.lua
+DATA/Rotation/Official/WARLOCK_Affliction_PVE.lua
+UI/Menu.lua
+UI/Minimap.lua
+UI/ErrorPopup.lua
