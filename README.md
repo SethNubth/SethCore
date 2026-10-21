@@ -95,6 +95,11 @@ Te da +40 FPS en ICC 25 con infestación.
 *   `/sethcore low` - Forzar modo FPS (sin sombras)
 *   `/sethcore high` - Restaurar gráficos bonitos
 *   `/sethcore gc` - Limpiar memoria RAM ahora mismo
+*   🧌
+*   /buggrabber 1
+   /sethcore status
+   /sethcore low
+   /sethcore high
 
 ❓ FAQ
 **¿Me pueden banear?** No. 100% Lua, usa funciones oficiales de Blizzard.
