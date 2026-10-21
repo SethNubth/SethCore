@@ -1,0 +1,7 @@
+## Interface: 30300
+## Title: SethLeatCore |cffffd700Made: SethNubth - Rexbe|r
+## Notes: Leatrix Gfx + SethCore PURE LUA - Fix fpscap - 4 Locales - Sin DLL
+## Author: SethNubth - Rexbe
+## Version: V2.0 PURE LUA
+## SavedVariables: LeaGfxDB, SethCoreDB
+SethLeatCore.lua
