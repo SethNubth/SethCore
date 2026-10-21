@@ -1,8 +1,7 @@
 ## Interface: 30300
-## Title: SethCore
-## Notes: V1.0 SAFE - No bloquea
+## Title: SethCore PURE |cffffd700by SethNubth|r
+## Notes: LuaBoost 1.9.8 PURE LUA - No DLL - No bloquea
 ## Author: SethNubth
-## Version: V1.0 SAFE
+## Version: 1.0 PURE LUA
 ## SavedVariables: SethCoreDB
-
-SethCore.lua
+core.lua
